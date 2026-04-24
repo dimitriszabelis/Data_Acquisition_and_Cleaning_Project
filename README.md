@@ -6,7 +6,7 @@ from Johns Hopkins University.
 
 ## Data Source & Data Sets
 
-Both data sets of this project are sourced from [Human Activity Recognition database](http://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones)
+Both data sets of this project are sourced from the [Human Activity Recognition database](http://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones)
 that resides in the UC Irvine Machine Learning Repository (see [1] for the license).
 
 The database features data collected from the sensors (accelerometer and gyroscope) 

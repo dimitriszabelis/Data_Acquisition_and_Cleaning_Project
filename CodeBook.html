@@ -352,32 +352,503 @@ display: none;
 </div>
 
 
-<p>Most important variables of the final tibble (tidy_dataset):</p>
+<div id="codebook-for-the-tidy_dataset-tibble" class="section level1">
+<h1>Codebook for the tidy_dataset Tibble</h1>
+<div id="variables" class="section level2">
+<h2>Variables</h2>
+<p>subject_ids (numeric)</p>
 <ul>
-<li>subject_ids (numeric), containing the ids of the subjects</li>
-<li>activity_codes (character), containing the activity names</li>
-<li>All of the remaining variables are numeric, they are normalized and
-bounded within [-1,1], and refer to different types of measurements. The
-complete list of measurements can be found in the “features.txt” file
-that is attached to the downloadable file of the <a href="http://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones">Human
-Activity Recognition database</a>, which includes the mean and standard
-deviation estimates and other estimates as well. Moreover, the
-“features_info.txt” file provides the relevant information about all
-those variables. For example:
-<ul>
-<li>tBodyAcc_mean_X refers to the mean body acceleration along the
-X-axis in the time domain.
-<ul>
-<li>t signifies a time domain signal (as opposed to f for the frequency
-domain)</li>
-<li>BodyAcc refers to the body acceleration signal (as opposed to the
-gravity component, which is signified by GravityAcc)</li>
-<li>mean refers to the mean value computed over the sliding 2.56-second
-window</li>
-<li>X refers to the X-axis of the 3-axial measurement</li>
-</ul></li>
-</ul></li>
+<li>Unique identifier for the volunteer subject who performed the
+activity (ranges from 1 to 30).</li>
 </ul>
+<p>activity_codes (character)</p>
+<ul>
+<li>Activity names representing the activity performed
+(“laying”,“sitting”, “standing”, “walking”, “walking_downstairs”,
+“walking_upstairs”).</li>
+</ul>
+<p>tBodyAcc_mean_X (numeric)</p>
+<ul>
+<li>Mean of the time-domain body acceleration signal along the X-axis,
+normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAcc_mean_Y (numeric)</p>
+<ul>
+<li>Mean of the time-domain body acceleration signal along the Y-axis,
+normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAcc_mean_Z (numeric)</p>
+<ul>
+<li>Mean of the time-domain body acceleration signal along the Z-axis,
+normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAcc_std_X (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body acceleration signal along
+the X-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAcc_std_Y (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body acceleration signal along
+the Y-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAcc_std_Z (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body acceleration signal along
+the Z-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tGravityAcc_mean_X (numeric)</p>
+<ul>
+<li>Mean of the time-domain gravity acceleration signal along the
+X-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tGravityAcc_mean_Y (numeric)</p>
+<ul>
+<li>Mean of the time-domain gravity acceleration signal along the
+Y-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tGravityAcc_mean_Z (numeric)</p>
+<ul>
+<li>Mean of the time-domain gravity acceleration signal along the
+Z-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tGravityAcc_std_X (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain gravity acceleration signal
+along the X-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tGravityAcc_std_Y (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain gravity acceleration signal
+along the Y-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tGravityAcc_std_Z (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain gravity acceleration signal
+along the Z-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAccJerk_mean_X (numeric)</p>
+<ul>
+<li>Mean of the time-domain body linear acceleration Jerk signal along
+the X-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAccJerk_mean_Y (numeric)</p>
+<ul>
+<li>Mean of the time-domain body linear acceleration Jerk signal along
+the Y-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAccJerk_mean_Z (numeric)</p>
+<ul>
+<li>Mean of the time-domain body linear acceleration Jerk signal along
+the Z-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAccJerk_std_X (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body linear acceleration Jerk
+signal along the X-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAccJerk_std_Y (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body linear acceleration Jerk
+signal along the Y-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAccJerk_std_Z (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body linear acceleration Jerk
+signal along the Z-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyro_mean_X (numeric)</p>
+<ul>
+<li>Mean of the time-domain body angular velocity signal from the
+gyroscope along the X-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyro_mean_Y (numeric)</p>
+<ul>
+<li>Mean of the time-domain body angular velocity signal from the
+gyroscope along the Y-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyro_mean_Z (numeric)</p>
+<ul>
+<li>Mean of the time-domain body angular velocity signal from the
+gyroscope along the Z-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyro_std_X (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body angular velocity signal
+from the gyroscope along the X-axis, normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>tBodyGyro_std_Y (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body angular velocity signal
+from the gyroscope along the Y-axis, normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>tBodyGyro_std_Z (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body angular velocity signal
+from the gyroscope along the Z-axis, normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>tBodyGyroJerk_mean_X (numeric)</p>
+<ul>
+<li>Mean of the time-domain body angular velocity Jerk signal along the
+X-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyroJerk_mean_Y (numeric)</p>
+<ul>
+<li>Mean of the time-domain body angular velocity Jerk signal along the
+Y-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyroJerk_mean_Z (numeric)</p>
+<ul>
+<li>Mean of the time-domain body angular velocity Jerk signal along the
+Z-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyroJerk_std_X (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body angular velocity Jerk
+signal along the X-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyroJerk_std_Y (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body angular velocity Jerk
+signal along the Y-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyroJerk_std_Z (numeric)</p>
+<ul>
+<li>Standard deviation of the time-domain body angular velocity Jerk
+signal along the Z-axis, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAccMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the time-domain body acceleration signal,
+calculated using the Euclidean norm, normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>tBodyAccMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the time-domain body
+acceleration signal, calculated using the Euclidean norm, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>tGravityAccMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the time-domain gravity acceleration
+signal, calculated using the Euclidean norm, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>tGravityAccMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the time-domain gravity
+acceleration signal, calculated using the Euclidean norm, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>tBodyAccJerkMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the time-domain body linear acceleration
+Jerk signal, calculated using the Euclidean norm, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>tBodyAccJerkMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the time-domain body linear
+acceleration Jerk signal, calculated using the Euclidean norm,
+normalized and bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyroMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the time-domain body angular velocity
+signal, calculated using the Euclidean norm, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>tBodyGyroMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the time-domain body angular
+velocity signal, calculated using the Euclidean norm, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>tBodyGyroJerkMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the time-domain body angular velocity Jerk
+signal, calculated using the Euclidean norm, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>tBodyGyroJerkMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the time-domain body angular
+velocity Jerk signal, calculated using the Euclidean norm, normalized
+and bounded within [-1, 1].</li>
+</ul>
+<p>fBodyAcc_mean_X (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body acceleration signal along the
+X-axis (FFT-applied), normalized and bounded within [-1, 1].</li>
+</ul>
+<p>fBodyAcc_mean_Y (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body acceleration signal along the
+Y-axis (FFT-applied), normalized and bounded within [-1, 1].</li>
+</ul>
+<p>fBodyAcc_mean_Z (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body acceleration signal along the
+Z-axis (FFT-applied), normalized and bounded within [-1, 1].</li>
+</ul>
+<p>fBodyAcc_std_X (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body acceleration signal
+along the X-axis (FFT-applied), normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>fBodyAcc_std_Y (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body acceleration signal
+along the Y-axis (FFT-applied), normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>fBodyAcc_std_Z (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body acceleration signal
+along the Z-axis (FFT-applied), normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>fBodyAcc_meanFreq_X (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body acceleration signal along the X-axis, normalized and bounded within
+[-1, 1].</li>
+</ul>
+<p>fBodyAcc_meanFreq_Y (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body acceleration signal along the Y-axis, normalized and bounded within
+[-1, 1].</li>
+</ul>
+<p>fBodyAcc_meanFreq_Z (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body acceleration signal along the Z-axis, normalized and bounded within
+[-1, 1].</li>
+</ul>
+<p>fBodyAccJerk_mean_X (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body linear acceleration Jerk signal
+along the X-axis (FFT-applied), normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>fBodyAccJerk_mean_Y (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body linear acceleration Jerk signal
+along the Y-axis (FFT-applied), normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>fBodyAccJerk_mean_Z (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body linear acceleration Jerk signal
+along the Z-axis (FFT-applied), normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>fBodyAccJerk_std_X (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body linear acceleration
+Jerk signal along the X-axis (FFT-applied), normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyAccJerk_std_Y (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body linear acceleration
+Jerk signal along the Y-axis (FFT-applied), normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyAccJerk_std_Z (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body linear acceleration
+Jerk signal along the Z-axis (FFT-applied), normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyAccJerk_meanFreq_X (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body linear acceleration Jerk signal along the X-axis, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>fBodyAccJerk_meanFreq_Y (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body linear acceleration Jerk signal along the Y-axis, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>fBodyAccJerk_meanFreq_Z (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body linear acceleration Jerk signal along the Z-axis, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>fBodyGyro_mean_X (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body angular velocity signal from the
+gyroscope along the X-axis (FFT-applied), normalized and bounded within
+[-1, 1].</li>
+</ul>
+<p>fBodyGyro_mean_Y (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body angular velocity signal from the
+gyroscope along the Y-axis (FFT-applied), normalized and bounded within
+[-1, 1].</li>
+</ul>
+<p>fBodyGyro_mean_Z (numeric)</p>
+<ul>
+<li>Mean of the frequency-domain body angular velocity signal from the
+gyroscope along the Z-axis (FFT-applied), normalized and bounded within
+[-1, 1].</li>
+</ul>
+<p>fBodyGyro_std_X (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body angular velocity
+signal from the gyroscope along the X-axis (FFT-applied), normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>fBodyGyro_std_Y (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body angular velocity
+signal from the gyroscope along the Y-axis (FFT-applied), normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>fBodyGyro_std_Z (numeric)</p>
+<ul>
+<li>Standard deviation of the frequency-domain body angular velocity
+signal from the gyroscope along the Z-axis (FFT-applied), normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>fBodyGyro_meanFreq_X (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body angular velocity signal along the X-axis, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyGyro_meanFreq_Y (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body angular velocity signal along the Y-axis, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyGyro_meanFreq_Z (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the frequency-domain
+body angular velocity signal along the Z-axis, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyAccMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the frequency-domain body acceleration
+signal, calculated using the Euclidean norm, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyAccMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the frequency-domain body
+acceleration signal, calculated using the Euclidean norm, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>fBodyAccMag_meanFreq (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the magnitude of the
+frequency-domain body acceleration signal, normalized and bounded within
+[-1, 1].</li>
+</ul>
+<p>fBodyBodyAccJerkMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the frequency-domain body linear
+acceleration Jerk signal, calculated using the Euclidean norm,
+normalized and bounded within [-1, 1].</li>
+</ul>
+<p>fBodyBodyAccJerkMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the frequency-domain body
+linear acceleration Jerk signal, calculated using the Euclidean norm,
+normalized and bounded within [-1, 1].</li>
+</ul>
+<p>fBodyBodyAccJerkMag_meanFreq (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the magnitude of the
+frequency-domain body linear acceleration Jerk signal, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>fBodyBodyGyroMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the frequency-domain body angular velocity
+signal, calculated using the Euclidean norm, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyBodyGyroMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the frequency-domain body
+angular velocity signal, calculated using the Euclidean norm, normalized
+and bounded within [-1, 1].</li>
+</ul>
+<p>fBodyBodyGyroMag_meanFreq (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the magnitude of the
+frequency-domain body angular velocity signal, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyBodyGyroJerkMag_mean (numeric)</p>
+<ul>
+<li>Mean of the magnitude of the frequency-domain body angular velocity
+Jerk signal, calculated using the Euclidean norm, normalized and bounded
+within [-1, 1].</li>
+</ul>
+<p>fBodyBodyGyroJerkMag_std (numeric)</p>
+<ul>
+<li>Standard deviation of the magnitude of the frequency-domain body
+angular velocity Jerk signal, calculated using the Euclidean norm,
+normalized and bounded within [-1, 1].</li>
+</ul>
+<p>fBodyBodyGyroJerkMag_meanFreq (numeric)</p>
+<ul>
+<li>Weighted average of the frequency components of the magnitude of the
+frequency-domain body angular velocity Jerk signal, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>angle_tBodyAccMean_gravity_ (numeric)</p>
+<ul>
+<li>Angle between the mean time-domain body acceleration vector and the
+gravity vector, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>angle_tBodyAccJerkMean_<em>gravityMean</em> (numeric)</p>
+<ul>
+<li>Angle between the mean time-domain body linear acceleration Jerk
+vector and the mean gravity vector, normalized and bounded within [-1,
+1].</li>
+</ul>
+<p>angle_tBodyGyroMean_gravityMean_ (numeric)</p>
+<ul>
+<li>Angle between the mean time-domain body angular velocity vector and
+the mean gravity vector, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>angle_tBodyGyroJerkMean_gravityMean_ (numeric)</p>
+<ul>
+<li>Angle between the mean time-domain body angular velocity Jerk vector
+and the mean gravity vector, normalized and bounded within [-1, 1].</li>
+</ul>
+<p>angle_X_gravityMean_ (numeric)</p>
+<ul>
+<li>Angle between the X-axis and the mean gravity vector, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>angle_Y_gravityMean_ (numeric)</p>
+<ul>
+<li>Angle between the Y-axis and the mean gravity vector, normalized and
+bounded within [-1, 1].</li>
+</ul>
+<p>angle_Z_gravityMean_ (numeric)</p>
+<ul>
+<li>Angle between the Z-axis and the mean gravity vector, normalized and
+bounded within [-1, 1].</li>
+</ul>
+</div>
+</div>
 
 
 
